@@ -1,1 +1,3 @@
-The set of bash and R scripts here demonstrate how you might run a simulation study comparing "new" and "old"  methods over varying sample sizes on JHPCE. Run the command `bash submit_simulation.sh` to launch the simulation. 
+The set of Bash and R scripts here demonstrate some useful practices when submitting multiple, long-running jobs on JHPCE. It in particular shows how to set an email notification, capture warnings and error messages, avoid code duplications via command line arguments, etc. As an example, we assume that we want to run a simulation study comparing "new" and "old" methods over varying sample sizes.
+
+The command `bash submit_simulation.sh` launches the simulation.
