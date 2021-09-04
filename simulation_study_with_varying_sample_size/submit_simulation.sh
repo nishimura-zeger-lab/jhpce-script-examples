@@ -5,7 +5,8 @@ n_core=2
 for sample_size in 1000 4000 16000; do
   for method_type in 'old' 'new'; do
     job_name="${method_type}_method_simulation_with_${sample_size}_observations"
-    log_file_name="${HOME}/${job_name}_qsub_log.txt"
+    mkdir -p "${HOME}/simulation_log" # Make a directory if non-existent
+    log_file_name="${HOME}/simulation_log/${job_name}_qsub_log.txt"
     qsub \
       -q "${node_name}" `# If you need a specific node` \
       -l mem_free="${mem_gb_free}G",h_vmem="${mem_gb_free}G" `# Specify memory requirement` \
