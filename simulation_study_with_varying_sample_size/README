@@ -1,0 +1,1 @@
+The set of bash and R scripts here demonstrate how you might run a simulation study comparing "new" and "old"  methods over varying sample sizes on JHPCE. Run the command `bash submit_simulation.sh` to launch the simulation. 
